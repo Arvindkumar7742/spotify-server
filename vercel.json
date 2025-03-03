@@ -1,12 +1,12 @@
 {
-  "routes": [
+  "rewrites": [
     {
-      "src": "/app/SongInfo/(?<id>[^/]+)",
-      "dest": "/api/app/SongInfo/[id].js"
+      "source": "/app/SongInfo/:id",
+      "destination": "/api/app/SongInfo/[id]"
     },
     {
-      "src": "/.well-known/assetlinks.json",
-      "dest": "/public/.well-known/assetlinks.json"
+      "source": "/.well-known/assetlinks.json",
+      "destination": "/public/.well-known/assetlinks.json"
     }
   ]
 }
