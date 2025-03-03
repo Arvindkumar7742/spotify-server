@@ -1,0 +1,12 @@
+{
+  "routes": [
+    {
+      "src": "/app/SongInfo/(?<id>[^/]+)",
+      "dest": "/api/app/SongInfo/[id].js"
+    },
+    {
+      "src": "/.well-known/assetlinks.json",
+      "dest": "/public/.well-known/assetlinks.json"
+    }
+  ]
+}
